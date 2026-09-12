@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Trust — Manifest</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="masthead">
+      <h1>Order Trust
+        <span class="tag">ALERTS, NOT ANOTHER DASHBOARD</span>
+      </h1>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat at-risk">
+        <div class="num" id="stat-alerts">—</div>
+        <div class="label">Active alerts</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="stat-open">—</div>
+        <div class="label">Unfulfilled items</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="stat-total">—</div>
+        <div class="label">Line items tracked</div>
+      </div>
+    </div>
+
+    <section>
+      <h2>Needs your attention</h2>
+      <div id="alert-list"></div>
+    </section>
+
+    <section>
+      <h2>Supplier baselines</h2>
+      <div class="supplier-row">
+        <div class="head">Supplier</div>
+        <div class="head">Avg lead time</div>
+        <div class="head">Orders tracked</div>
+        <div class="head">Refunds</div>
+      </div>
+      <div id="supplier-list"></div>
+    </section>
+  </div>
+
+  <script src="/dashboard.js"></script>
+</body>
+</html>
